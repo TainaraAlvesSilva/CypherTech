@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+    animation: gradientAnimation 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -20px); }
+    100% { transform: translate(-50%, 0); }
+}
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+}
+
+.animated-background ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.animated-background li {
+    position: absolute;
+    bottom: -120px;
+    display: block;
+    animation: up 3s infinite alternate;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-900px) rotate(900deg);
+    }
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+label {
+    color: #fff;
+}
+#bloco {
+    max-width: 400px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(238, 236, 236);
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.popupSucesso {
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+    animation: gradientAnimation 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+
+}
+@keyframes floatAnimation {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -20px); }
+    100% { transform: translate(-50%, 0); }
+}
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+}
+
+.animated-background ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.animated-background li {
+    position: absolute;
+    bottom: -120px;
+    display: block;
+    animation: up 3s infinite alternate;
+}
+
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-900px) rotate(900deg);
+    }
+}
+
+.cartao {   
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(230, 218, 218, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #3aa6ee;
+    color: white;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid;
+    border-radius: 0.25rem 0.25rem 0 0;
+    color: white;
+}
+
+.titulo-cartao {
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-label {
+    color: white;
+}
+
+.btn-primario {
+    background: white;
+    border: none;
+}
+
+.btn-primario:hover {
+    background: #4d504f;
+}
+
+.text-center a {
+    color: #3aa6ee;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+

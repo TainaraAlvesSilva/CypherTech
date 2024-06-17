@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+    animation: gradientAnimation 15s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+
+}
+@keyframes floatAnimation {
+    0% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -20px); }
+    100% { transform: translate(-50%, 0); }
+}
+.animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: linear-gradient(135deg, #000428, #004e92, #6A0572, #240B36);
+}
+
+.animated-background ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.animated-background li {
+    position: absolute;
+    bottom: -120px;
+    display: block;
+    animation: up 3s infinite alternate;
+}
+
+#cabecalho {
+    background: linear-gradient(135deg, rgba(0, 4, 40, 0.8), rgba(36, 11, 54, 0.8));
+    position: relative;
+    z-index: 1;
+}
+
+.tituloprod {
+    color: #fff;
+    font-family: courier, arial, helvetica;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0, 4, 40, 0.8), rgba(36, 11, 54, 0.8)); /* Mantém o mesmo gradiente de fundo */
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.7;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-900px) rotate(900deg);
+    }
+}
+
+.navbar-brand img {
+    max-height: 110px;
+    color: white;
+}
+.navbar-nav .nav-link {
+    color: #fff; /* Define a cor dos links como branco */
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(26, 212, 26); /* Define a cor dos links quando o mouse está sobre eles */
+}
+li{
+    color: white;
+}
+.bonecoLogin {
+    height: 80px;
+}
+.produto {
+    background: linear-gradient(135deg, rgba(0, 4, 40, 0.8), rgba(36, 11, 54, 0.8));
+    position: relative;
+    z-index: 1;
+    border: none solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 80px;
+    height: 650px;
+    width: 500px;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.produto1 {
+    width: 400px;
+    margin: auto;
+}
+
+.produtom {
+    width: 300px;
+    margin: auto;
+    margin-left: 60px;
+}
+
+.produtomaono {
+    width: 200px;
+    margin-left: 120px;
+}
+
+.produto1LG {
+    width: 550px;
+    margin: auto;
+}
+
+.preco {
+    font-weight: bold;
+    color: #009900;
+}
+
+.nomeprod {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.paragrafotec1 {
+    font-size: 15px;
+    color: azure;
+    text-align: center;
+}
+
+.tituloprod {
+    color: #fff;
+    font-family: courier, arial, helvetica;
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(135deg, rgba(119, 130, 229, 0.8), rgba(222, 42, 171, 0.8));
+    border: none solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 25px;
+
+}
+
+.botao {
+    border: none solid transparent;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+
+footer {
+    color: #000000;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* Define a cor dos links como branco */
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(26, 212, 26); /* Define a cor dos links quando o mouse está sobre eles */
+}
+
+.containerprod {
+    display: flex;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* Para garantir que o popup esteja acima de outros elementos */
+}
+/* Estilos para cada produto com cores diferentes */
+.produto:nth-child(1) {
+    box-shadow: 0px 10px 20px #009900; /* Adiciona sombra */
+}
+
+.produto:nth-child(2) {
+    box-shadow: 0px 10px 20px rgb(235, 128, 146) /* Adiciona sombra */
+}
+
+.produto:nth-child(3) {
+    box-shadow: 0px 10px 20px rgb(236, 38, 38); /* Adiciona sombra */
+}
+
+/* Adicione mais estilos para produtos adicionais conforme necessário */
